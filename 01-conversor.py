@@ -22,6 +22,7 @@ def run():
     moneda2 = int(input("Inserte el número de la moneda a la que quiere convertir: "))
     monto = float(input("Inserte el monto que desea convertir: "))
     monto2 = conversion(moneda1, moneda2, monto)
+    monto2 = round(monto2, 2)
     print("Usted tiene: " + str(monto2) + " " + monedas[moneda2-1])
 
 
