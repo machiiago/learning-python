@@ -13,7 +13,7 @@ cambio = [0.27, 1, 0.0014, 0.14]
 monedas = ["soles", "dólares", "pesos chilenos", "pesos bolivianos"]
 
 def conversion(moneda1, moneda2, monto):
-    monto2 = monto*cambio[moneda2-1]/cambio[moneda1-1]
+    monto2 = monto*cambio[moneda1-1]/cambio[moneda2-1]
     return monto2
 
 def run():
