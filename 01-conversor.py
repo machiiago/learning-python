@@ -13,7 +13,7 @@ cambio = [0.27, 1, 0.0014, 0.14]
 monedas = ["soles", "dólares", "pesos chilenos", "pesos bolivianos"]
 
 def conversion(moneda1, moneda2, monto):
-    monto2 = monto*cambio[moneda2]/cambio[moneda1]
+    monto2 = monto*cambio[moneda2-1]/cambio[moneda1-1]
     return monto2
 
 def run():
@@ -22,7 +22,7 @@ def run():
     moneda2 = int(input("Inserte el número de la moneda a la que quiere convertir: "))
     monto = float(input("Inserte el monto que desea convertir: "))
     monto2 = conversion(moneda1, moneda2, monto)
-    print("Usted tiene: " + str(monto2) + " " + monedas[moneda2])
+    print("Usted tiene: " + str(monto2) + " " + monedas[moneda2-1])
 
 
 if __name__ == "__main__":
