@@ -1,9 +1,9 @@
 def potencias (base, limite):
-    i = 0
-    a = 0
+    i = 1
+    a = 1
     while a < limite:
+        print(a)
         a = base ** i
-        print (a)
         i += 1
 
 
