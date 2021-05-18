@@ -1,8 +1,11 @@
 def es_primo(num):
     limite = int(num ** 0.5) + 1
+    testigo = False
     for i in range(2,limite):
         if num % i == 0:
-            print("El número no es primo")
+            Testigo = True
+    if Testigo:
+        print("El número no es primo")
     else:
         print("El número es primo")
 
