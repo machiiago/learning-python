@@ -12,7 +12,10 @@ def es_primo(num):
 def run():
     print("¡Prueba de primalidad")
     numero = int(input("Inserte un número: "))
-    es_primo(numero)
+    if numero == 0 or numero == 1:
+        print ("El número no es primo")
+    else:
+        es_primo(numero)
 
 if __name__ == "__main__":
     run()
