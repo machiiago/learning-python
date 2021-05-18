@@ -7,10 +7,10 @@ Puede convertir entre las siguientes monedas:
 4 Peso boliviano"""
 
 #tupla con los cambios a dólar de: 1-sol, 2-dolar, 3-peso chileno y 4-peso boliviano:
-cambio = [0.27, 1, 0.0014, 0.14]
+cambio = (0.27, 1, 0.0014, 0.14)
 
 #tupla con los nombres de las monedas:
-monedas = ["soles", "dólares", "pesos chilenos", "pesos bolivianos"]
+monedas = ("soles", "dólares", "pesos chilenos", "pesos bolivianos")
 
 def conversion(moneda1, moneda2, monto):
     monto2 = monto*cambio[moneda1-1]/cambio[moneda2-1]

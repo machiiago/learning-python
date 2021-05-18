@@ -7,7 +7,7 @@ La computadora escogerá un número al azar entre 1 y 100
 *psss... si estás a 5 números o menos te avisaré"""
 VICTORIA = """Hallaste el número!!
 Número de intentos: """
-banco = ["menor que ese", "mayor que ese", "... ¡Pero estás cerca!", ""]
+banco = ("menor que ese", "mayor que ese", "... ¡Pero estás cerca!", "")
 
 
 def diferencia(numero):
