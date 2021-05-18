@@ -3,15 +3,15 @@ def es_primo(num):
     testigo = False
     for i in range(2,limite):
         if num % i == 0:
-            Testigo = True
-    if Testigo:
+            testigo = True
+    if testigo:
         print("El número no es primo")
     else:
         print("El número es primo")
 
 def run():
     print("¡Prueba de primalidad")
-    numero = int(input("Inserte un número"))
+    numero = int(input("Inserte un número: "))
     es_primo(numero)
 
 if __name__ == "__main__":
